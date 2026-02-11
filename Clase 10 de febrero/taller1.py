@@ -3,7 +3,7 @@
 # Create a list with 5 elements
 colors: list = ['Amarillo', 'Azul', 'Rojo', 'Verde', 'Morado']
 print(colors[1]) # 
-colors.insert(3, "Estructura de datos")
+colors.insert(2, "Estructura de datos")
 
 for index, color in enumerate(colors):
     if color == "Estructura de datos":
@@ -19,5 +19,6 @@ print(ages[1][1])
 del ages[2][2]
 
 for index, age in enumerate(ages):
-    if age == 55:
-        print(index)
+    for index2, age2 in enumerate(ages[index]):
+        if age2 == 55:
+            print(f"{index},{index2}")
