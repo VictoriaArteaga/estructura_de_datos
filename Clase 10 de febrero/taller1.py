@@ -20,5 +20,5 @@ del ages[2][2]
 
 for index, age in enumerate(ages):
     for index2, age2 in enumerate(ages[index]):
-        if age2 == 55:
+        if age2 == 28:
             print(f"{index},{index2}")
